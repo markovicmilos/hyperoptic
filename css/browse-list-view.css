@@ -1,0 +1,1399 @@
+/*
+ * ******************************************************************************
+ *  browse-list-view-Hyperoptic
+ *  file: browse-list-view.css
+ *
+ *  Copyright (c) 2014. Hyperoptic Ltd ; 
+ *  Cable, London - UK
+ *  email: admin@hyperoptic.com
+ *  site: 	http://www.hyperoptic.com
+ *  outher-blog:	http://www..com
+ *
+ *  Licences: MIT, GPL
+ *  http://www.opensource.org/licenses/mit-license.php
+ *  http://www.gnu.org/licenses/gpl.html
+ *
+ *	Artwork inspired by:  /
+ *  last modified: 9/12/14 10.07
+ *  *****************************************************************************
+ */
+
+/*******************************************************************************
+ * 
+ * Hyperoptic: 
+ * version: 0.90
+ * Author-of-the-file: Vladimir Veljkovic
+ * Creation date: 9/12/14
+ * Licences: MIT, GPL
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ ******************************************************************************/
+
+
+
+@charset "utf-8";
+
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x:hidden;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*	Fonts for all browsers   */
+@font-face {
+    font-family: 'bariol_boldbold';
+    src: url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.eot');
+    src: url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.woff2') format('woff2'),
+         url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.woff') format('woff'),
+         url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.ttf') format('truetype'),
+         url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.svg#bariol_boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bariol_lightlight';
+    src: url('../font/Bariol/Bariol_Light/bariol_light-webfont.eot');
+    src: url('../font/Bariol/Bariol_Light/bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bariol/Bariol_Light/bariol_light-webfont.woff2') format('woff2'),
+         url('../font/Bariol/Bariol_Light/bariol_light-webfont.woff') format('woff'),
+         url('../font/Bariol/Bariol_Light/bariol_light-webfont.ttf') format('truetype'),
+         url('../font/Bariol/Bariol_Light/bariol_light-webfont.svg#bariol_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bariol_regularregular';
+    src: url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.eot');
+    src: url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.woff2') format('woff2'),
+         url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.woff') format('woff'),
+         url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.ttf') format('truetype'),
+         url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bariolthin';
+    src: url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.eot');
+    src: url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.woff2') format('woff2'),
+         url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.woff') format('woff'),
+         url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.ttf') format('truetype'),
+         url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.svg#bariolthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*	Headers   */
+h1 { 
+    display: block;
+    font-size: 1.6em;
+    margin-top: 0.875em;
+    margin-bottom: -0.125em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 400;
+	text-align:center;
+	color:#111111;
+}
+
+
+
+
+/*========================================*/
+/*===    Header - For more pages     ===*/
+/*======================================*/
+
+
+
+/*#header {
+position: relative;
+width:60%; 
+height:145px;
+margin:0 auto;
+padding: 0;
+top: 1%;
+z-index:2;
+background-color:#C34244;
+}*/
+
+/* Top navbar fixes for Bootstrap  CSS */
+.navbar-default {
+background-color: transparent; 
+border:none;
+}
+
+
+.navbar {
+position: relative;
+min-height: 50px;
+margin-bottom: 0px; 
+border: 1px solid transparent;
+}
+
+.navbar-nav {
+margin: 0px 0px; 
+}
+
+.navbar-collapse {
+padding-right:0px; 
+padding-left: 0px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form, .navbar-default .navbar-toggle {
+border:none;
+}
+
+/* Tree bars TOST for toogle menu */
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+color: #333;
+background-color: transparent; 
+border-color: transparent;
+}
+.navbar-toggle {
+position: relative;
+float: right;
+padding: 9px 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 8px;
+background-color: transparent;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+/* Drop down Residential - width fix */
+#res-dropdown.navbar-nav > li > a {
+width:157%;
+padding-top: 6px;
+padding-left: 25px;
+padding-bottom: 15px;
+font-family: 'bariol_regularregular';
+}
+/* Drop down Residential opened - width fix */
+#res-dropdown.navbar-default .navbar-nav > .open > a {
+width:157%;
+}
+
+/* Input field for postcode search - usualy in header nav */
+.input-postcode {
+display: block;
+width: 100%;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #B1B1B1;
+background-color: #dbdbdb;
+background-image: none;
+border: none;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/* Button for select view mode - usualy in header nav */
+.btn-group-select-400 {
+width:70%;
+max-width:400px;
+}
+.btn-group-select-120 {
+width:70%;
+max-width:120px;
+}
+.btn-select {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-family: 'bariol_regularregular';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+
+/*========================================*/
+/*=== Content - Custom for every page ===*/
+/*======================================*/
+
+
+/* Google Map customisation */
+#map-canvas {
+position:relative;
+width:100%;
+height:580px;
+max-width: 100%;
+}
+
+#map-description {
+position:absolute;
+width:200px;
+height:130px;
+margin-top:25px;
+margin-left:19%;
+background-color: rgba(255,255,255,0.92);
+z-index:5;
+}
+
+.map-canvas-small {
+    position:relative;
+    width:100%;
+    height:178px;
+    max-width: 100%;
+}
+
+/* Marker size for KEY description */
+.marker-size-1 {
+width:18px;
+height:24px;
+}
+
+/* Google Map Info window redesign - Location Description */
+
+/* Window design */
+
+/* Grid Info window redesign - Location Description */
+
+/* Window design */
+/* Registring Interest  */
+#locationDescription-ri {
+}
+/* Arow and bgd */
+.list-box-bg {
+	position: relative;
+	background: #ffffff;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	border: 1px solid rgba(158, 153, 147, 0.3);
+	border-bottom:none;
+    box-shadow: 0px 1px 1px rgba(136, 136, 136, 0.4);
+}
+
+/* Image of site (s1) style option 1 */
+.ld-img-s1 {
+width:100%;
+padding-top:5%;
+padding-right:5%;
+padding-left:5%;
+}
+/* Image of site (s2) style option 2 - list view */
+.ld-img-s2 {
+width:100%;
+padding-top:15px;
+padding-bottom:15px;
+}
+
+/* Marker Element positioning inside Location description */
+.marker-grid-view {
+margin-right:13px;
+margin-top:24px;
+}
+
+/* Name */
+#ld-name-container{
+	width:100%;
+}
+
+
+/* Status Element list container */
+#status-group-list {
+width:100%;
+}
+/* Status Element gray - Registering Interest grid view */
+#ldg-1 {
+width:100%;
+height:100%;
+background-color:#939498;
+}
+/* Status Element blue - Accepting Orders Interest gid view */
+#ldb-1 {
+width:100%;
+height:100%;
+background-color:#009fe3;
+}
+
+/* Status Element gray - Registering Interest List view */
+#ldlg-1 {
+line-height: 100%;
+background-color: #929497;
+padding-top: 6px;
+padding-bottom: 1px;
+}
+#ldlb-1 {
+line-height: 100%;
+background-color: #929497;
+padding-top: 6px;
+padding-bottom: 1px;
+background-color:#009fe3;
+}
+
+/* Footer */
+#footer-social-icons {
+margin-left: 25%;
+height:105px;
+}
+
+
+/*==============================*/
+/*===   Universal styles    ===*/
+/*==========================*=*/
+
+/* ***************** */
+/*      Color       */
+/* =============== */
+
+/*   Font color   */
+.white-f-fff {
+color:#ffffff;
+}
+.black-f-000 {
+color:#000000;
+}
+.black-f-1 {
+color:#221e20!important;
+}
+.gray-f-1 {
+color:#6c6e73;
+}
+.gray-f-2 {
+color:#838589;
+}
+.gray-f-3 {
+color:#929293;
+}
+.gray-f-4 {
+color:#a3a3a6;
+}
+
+.blue-navy-f-1 {
+color:#19a6e4;
+}
+.blue-navy-f-2 {
+color:#1c9ad7;
+}
+
+
+
+
+/*  Background color  */
+.gray-bg-1 {
+background-color:#efefef;
+}
+.gray-bg-2 {
+background-color:#929497;
+}
+
+/* ***************** */
+/*    Font size     */
+/* =============== */
+
+.font-10 {
+font-size:1em;
+}
+.font-11 {
+font-size:1.1em;
+}
+
+.font-12 {
+font-size:1.2em;
+}
+.font-13 {
+font-size:1.3em;
+}
+
+.font-14 {
+font-size:1.4em;
+}
+.font-16 {
+font-size:1.6em;
+}
+
+.font-18 {
+font-size:1.8em;
+}
+.font-20 {
+font-size:2.0em;
+}
+.font-21 {
+font-size:2.1em;
+}
+
+.font-22 {
+font-size:2.2em;
+}
+.font-24 {
+font-size:2.4em;
+}
+.font-26 {
+font-size:2.6em;
+}
+.font-28 {
+font-size:2.8em;
+}
+.font-30 {
+font-size:3.0em;
+}
+.font-32 {
+font-size:3.2em;
+}
+.font-34 {
+font-size:3.4em;
+}
+.font-36 {
+font-size:3.6em;
+}
+.font-38 {
+font-size:3.8em;
+}
+.font-40 {
+font-size:4.0em;
+}
+.font-42 {
+font-size:4.2em;
+}
+
+
+.font-50 {
+font-size:5.0em;
+}
+
+/*  Font weight  */
+.font-w-300 {
+font-weight:300;
+}
+.font-w-400 {
+font-weight:400;
+}
+.font-w-500 {
+font-weight:500;
+}
+.font-w-600 {
+font-weight:600;
+}
+.font-w-700 {
+font-weight:700;
+}
+.font-w-800 {
+font-weight:800;
+}
+.font-w-900 {
+font-weight:900;
+}
+
+
+
+
+/* ***************** */
+/*  Border classe   */
+/* =============== */
+
+
+/* No border */
+.border-none {
+border:none;
+}
+
+/* Border 1px Solid Gray */
+.b-t-1px-gray {
+border-top: 1px solid #c0c0c2;
+}
+.b-r-1px-gray {
+border-right: 1px solid #c0c0c2;
+}
+.b-b-1px-gray {
+border-bottom: 1px solid #c0c0c2;
+}
+.b-l-1px-gray {
+border-left: 1px solid #c0c0c2;
+}
+/* Border 1px Solid Gray ALL */
+.b-all-1px-gray {
+border: 1px solid #c0c0c2;
+}
+
+/* ***************** */
+/* Paddings classe  */
+/* =============== */
+
+/*   RESET Padding TO 0px  */
+/* Padding 0 px  */
+.pad-top-percent-0 {
+padding-top:0;
+}
+.pad-right-percent-0 {
+padding-right:0;
+}
+.pad-bottom-percent-0 {
+padding-bottom:0;
+}
+.pad-left-percent-0 {
+padding-left:0;
+}
+/*   Padding ALL 0   */
+
+.pad-all-0 {
+padding:0px;
+}
+
+/* Padding 0.5 px  */
+.pad-top-percent-05 {
+padding-top:0.5%;
+}
+.pad-right-percent-05 {
+padding-right:0.5%;
+}
+.pad-bottom-percent-05 {
+padding-bottom:0.5%;
+}
+.pad-left-percent-05 {
+padding-left:0.5%;
+}
+/*   Padding ALL 05   */
+
+.pad-all-05 {
+padding:0.5%;
+}
+
+
+/*  Percent paddings	*/
+
+/* Padding 1 percent  */
+.pad-top-percent-1 {
+padding-top:1%;
+}
+.pad-right-percent-1 {
+padding-right:1%;
+}
+.pad-bottom-percent-1 {
+padding-bottom:1%;
+}
+.pad-left-percent-1 {
+padding-left:1%;
+}
+/*   Padding ALL 1   */
+.pad-all-percent-1 {
+padding:1%;
+}
+
+/* Padding 2 percent  */
+.pad-top-percent-2 {
+padding-top:2%;
+}
+.pad-right-percent-2 {
+padding-right:2%;
+}
+.pad-bottom-percent-2 {
+padding-bottom:2%;
+}
+.pad-left-percent-2 {
+padding-left:2%;
+}
+/*   Padding ALL 2   */
+.pad-all-percent-2 {
+padding:2%;
+}
+
+
+
+/* Padding 5 percent   */
+.pad-top-percent-5 {
+padding-top:5%;
+}
+.pad-right-percent-5 {
+padding-right:5%;
+}
+.pad-bottom-percent-5 {
+padding-bottom:5%;
+}
+.pad-left-percent-5 {
+padding-left:5%;
+}
+/*    Padding ALL 5%  */
+.pad-all-percent-5 {
+padding:5%;
+}
+
+/* Padding 10 percent   */
+.pad-top-percent-10 {
+padding-top:10%;
+}
+.pad-right-percent-10 {
+padding-right:10%;
+}
+.pad-bottom-percent-10 {
+padding-bottom:10%;
+}
+.pad-left-percent-10 {
+padding-left:10%;
+}
+/*    Padding ALL 10%  */
+.pad-all-percent-10 {
+padding:10%;
+}
+
+/* Padding 11 percent   */
+.pad-top-percent-11 {
+padding-top:11%;
+}
+.pad-right-percent-11 {
+padding-right:11%;
+}
+.pad-bottom-percent-11 {
+padding-bottom:11%;
+}
+.pad-left-percent-11 {
+padding-left:11%;
+}
+/*    Padding ALL 11%  */
+.pad-all-percent-11 {
+padding:11%;
+}
+
+/* Padding 15 percent   */
+.pad-top-percent-15 {
+padding-top:15%;
+}
+.pad-right-percent-15 {
+padding-right:15%;
+}
+.pad-bottom-percent-15 {
+padding-bottom:15%;
+}
+.pad-left-percent-15 {
+padding-left:15%;
+}
+/*    Padding ALL 15%  */
+.pad-all-percent-15 {
+padding:15%;
+}
+
+/* Specialy created paddings to get 1070px wid nad fluid   */
+/* Padding 18 percent   */
+.pad-top-percent-18 {
+padding-top:18.25%;
+}
+.pad-right-percent-18 {
+padding-right:18.25%;
+}
+.pad-bottom-percent-18 {
+padding-bottom:18.25%;
+}
+.pad-left-percent-18 {
+padding-left:18.25%;
+}
+/*    Padding ALL 18%  */
+.pad-all-percent-18 {
+padding:18.25%;
+}
+
+/* Padding 19.53 percent  */
+.pad-top-percent-19 {
+padding-top:19.53%;
+}
+.pad-right-percent-19 {
+padding-right:19.53%;
+}
+.pad-bottom-percent-19 {
+padding-bottom:19.53%;
+}
+.pad-left-percent-19 {
+padding-left:19.53%;
+}
+/*   Padding ALL 19.53   */
+.pad-all-percent-19 {
+padding:19.53%;
+}
+
+
+/* Padding 20 percent   */
+.pad-top-percent-20 {
+padding-top:20%;
+}
+.pad-right-percent-20 {
+padding-right:20%;
+}
+.pad-bottom-percent-20 {
+padding-bottom:20%;
+}
+.pad-left-percent-20 {
+padding-left:20%;
+}
+/*    Padding ALL 20%  */
+.pad-all-percent-20 {
+padding:20%;
+}
+
+
+/*  	Padding fixed lenght	*/
+
+
+
+/* Padding 5 px   */
+.pad-top-fixed-5 {
+padding-top:5px;
+}
+.pad-right-fixed-5 {
+padding-right:5px;
+}
+.pad-bottom-fixed-5 {
+padding-bottom:5px;
+}
+.pad-left-fixed-5 {
+padding-left:5px;
+}
+/*    Padding ALL 5px  */
+.pad-all-fixed-5 {
+padding:5px;
+}
+
+/* Padding 10 px   */
+.pad-top-fixed-10 {
+padding-top:10px;
+}
+.pad-right-fixed-10 {
+padding-right:10px;
+}
+.pad-bottom-fixed-10 {
+padding-bottom:10px;
+}
+.pad-left-fixed-10 {
+padding-left:10px;
+}
+/*    Padding ALL 10px  */
+.pad-all-fixed-10 {
+padding:10px;
+}
+
+/* Padding 15 px   */
+.pad-top-fixed-15 {
+padding-top:15px;
+}
+.pad-right-fixed-15 {
+padding-right:15px;
+}
+.pad-bottom-fixed-15 {
+padding-bottom:15px;
+}
+.pad-left-fixed-15 {
+padding-left:15px;
+}
+/*    Padding ALL 15px  */
+.pad-all-fixed-15 {
+padding:15px;
+}
+
+/* Padding 20 px   */
+.pad-top-fixed-20 {
+padding-top:20px;
+}
+.pad-right-fixed-20 {
+padding-right:20px;
+}
+.pad-bottom-fixed-20 {
+padding-bottom:20px;
+}
+.pad-left-fixed-20 {
+padding-left:20px;
+}
+/*    Padding ALL 20px  */
+.pad-all-fixed-20 {
+padding:20px;
+}
+
+/* Padding 30 px   */
+.pad-top-fixed-30 {
+padding-top:30px;
+}
+.pad-right-fixed-30 {
+padding-right:30px;
+}
+.pad-bottom-fixed-30 {
+padding-bottom:30px;
+}
+.pad-left-fixed-30 {
+padding-left:30px;
+}
+/*    Padding ALL 30px  */
+.pad-all-fixed-30 {
+padding:30px;
+}
+
+/* Padding 60 px   */
+.pad-top-fixed-60 {
+padding-top:60px;
+}
+.pad-right-fixed-60 {
+padding-right:60px;
+}
+.pad-bottom-fixed-60 {
+padding-bottom:60px;
+}
+.pad-left-fixed-60 {
+padding-left:60px;
+}
+/*    Padding ALL 60px  */
+.pad-all-fixed-60 {
+padding:60px;
+}
+
+
+/* Padding 100 px   */
+.pad-top-fixed-100 {
+padding-top:100px;
+}
+.pad-right-fixed-100 {
+padding-right:100px;
+}
+.pad-bottom-fixed-100 {
+padding-bottom:100px;
+}
+.pad-left-fixed-100 {
+padding-left:100px;
+}
+/*    Padding ALL 100px  */
+.pad-all-fixed-100 {
+padding:100px;
+}
+
+/* ******************** */
+/*    Margin classe    */
+/* ================== */
+
+/* Percent margin	*/
+
+/* Margin 1 percent  */
+.marg-top-percent-1 {
+margin-top:1%;
+}
+.marg-right-percent-1 {
+margin-right:1%;
+}
+.marg-bottom-percent-1 {
+margin-bottom:1%;
+}
+.marg-left-percent-1 {
+margin-left:1%;
+}
+/*   Margin ALL 1%   */
+.marg-all-percent-1 {
+margin:1%;
+}
+
+/* Margin 10 percent  */
+.marg-top-percent-10 {
+margin-top:10%;
+}
+.marg-right-percent-10 {
+margin-right:10%;
+}
+.marg-bottom-percent-10 {
+margin-bottom:10%;
+}
+.marg-left-percent-10 {
+margin-left:10%;
+}
+/*   Margin ALL 10%   */
+.marg-all-percent-10 {
+margin:10%;
+}
+
+
+/*	 Margin fixed lenght	*/
+
+/*        Margin 5 px         */
+.marg-top-fixed-5 {
+margin-top:5px;
+}
+.marg-right-fixed-5 {
+margin-right:5px;
+}
+.marg-bottom-fixed-5 {
+margin-bottom:5px;
+}
+.marg-left-fixed-5 {
+margin-left:5px!important;
+}
+/*   Margin ALL 5px   */
+.marg-all-fixed-5 {
+margin:5px;
+}
+
+/*        Margin 10 px         */
+.marg-top-fixed-10 {
+margin-top:10px;
+}
+.marg-right-fixed-10 {
+margin-right:10px;
+}
+.marg-bottom-fixed-10 {
+margin-bottom:10px;
+}
+.marg-left-fixed-10 {
+margin-left:10px!important;
+}
+/*   Margin ALL 10px   */
+.marg-all-fixed-10 {
+margin:10px;
+}
+
+
+/*        Margin 15 px         */
+.marg-top-fixed-15 {
+margin-top:15px;
+}
+.marg-right-fixed-15 {
+margin-right:15px;
+}
+.marg-bottom-fixed-15 {
+margin-bottom:15px;
+}
+.marg-left-fixed-15 {
+margin-left:15px!important;
+}
+/*   Margin ALL 15px   */
+.marg-all-fixed-15 {
+margin:15px;
+}
+
+
+/*        Margin 20 px         */
+.marg-top-fixed-20 {
+margin-top:20px;
+}
+.marg-right-fixed-20 {
+margin-right:20px;
+}
+.marg-bottom-fixed-20 {
+margin-bottom:20px;
+}
+.marg-left-fixed-20 {
+margin-left:20px!important;
+}
+/*   Margin ALL 20px   */
+.marg-all-fixed-20 {
+margin:20px;
+}
+
+/*        Margin 30 px         */
+.marg-top-fixed-30 {
+margin-top:30px;
+}
+.marg-right-fixed-30 {
+margin-right:30px;
+}
+.marg-bottom-fixed-30 {
+margin-bottom:30px;
+}
+.marg-left-fixed-30 {
+margin-left:30px!important;
+}
+/*   Margin ALL 30px   */
+.marg-all-fixed-30 {
+margin:30px;
+}
+
+/*        Margin 50 px         */
+.marg-top-fixed-50 {
+margin-top:50px;
+}
+.marg-right-fixed-50 {
+margin-right:50px;
+}
+.marg-bottom-fixed-50 {
+margin-bottom:50px;
+}
+.marg-left-fixed-50 {
+margin-left:50px!important;
+}
+/*   Margin ALL 50px   */
+.marg-all-fixed-50 {
+margin:50px;
+}
+
+
+/*        Margin 100 px         */
+.marg-top-fixed-100 {
+margin-top:100px;
+}
+.marg-right-fixed-100 {
+margin-right:100px;
+}
+.marg-bottom-fixed-100 {
+margin-bottom:100px;
+}
+.marg-left-fixed-100 {
+margin-left:100px!important;
+}
+/*   Margin ALL 100px   */
+.marg-all-fixed-100 {
+margin:100px;
+}
+
+/*        Margin 104 px         */
+.marg-top-fixed-104 {
+margin-top:104px;
+}
+.marg-right-fixed-104 {
+margin-right:104px;
+}
+.marg-bottom-fixed-104 {
+margin-bottom:104px;
+}
+.marg-left-fixed-104 {
+margin-left:104px!important;
+}
+/*   Margin ALL 104px   */
+.marg-all-fixed-104 {
+margin:104px;
+}
+
+
+/*        Margin 150 px         */
+.marg-top-fixed-150 {
+margin-top:150px;
+}
+.marg-right-fixed-150 {
+margin-right:150px;
+}
+.marg-bottom-fixed-150 {
+margin-bottom:150px;
+}
+.marg-left-fixed-150 {
+margin-left:150px!important;
+}
+/*   Margin ALL 150px   */
+.marg-all-fixed-150 {
+margin:150px;
+}
+
+
+
+/* ******************************************* */
+/*    Positioning - Top Right Bottom  Left    */
+/* ========================================= */
+
+
+
+/*    10 px       */
+.top-fixed-10 {
+top:10px;
+}
+.right-fixed-10 {
+bottom-bottom:150px;
+}
+.bott-fixed-10 {
+bottom:10px;
+}
+left-fixed-10 {
+left:10px;
+}
+
+/* ************************* */
+/*    Display settings    */
+/* ======================= */
+
+.dis-block  {
+display:block;
+}
+.dis-inline   {
+display:inline;
+}
+.dis-inline-b   {
+display:inline-block;
+}
+
+
+/* ************************* */
+/*          Align           */
+/* ======================= */
+
+.vertical-baseline  {
+vertical-align:baseline
+}
+
+
+
+/* ************************* */
+/*    Paragraph settings    */
+/* ======================= */
+
+.l-h-small {
+    line-height: 80%;
+}
+.l-h-130 {
+    line-height: 130%;
+}
+.l-h-big {
+    line-height: 200%;
+}
+
+.l-h-39px {
+    line-height: 39px;
+}
+
+.let-space-minus-05 {
+	letter-spacing:-0.05em;
+}
+
+
+/* ************************* */
+/* Graphic elements classe  */
+/* ======================= */
+
+/* Arow downm    for dropdown menu and buttons */
+.arow-down-s {
+position:absolute;
+background: url(../images/select-bottom-arow-icon.png) no-repeat right;
+width: 10px;
+height:6px;
+right: 17%!important;
+bottom: 40%;
+-webkit-appearance: none;
+border: none;
+}
+
+/*=============================*/
+/*===     Mobile rady      ===*/
+/*===========================*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen 
+and (min-width : 0px) 
+and (max-width : 768px) {
+	.pad-right-percent-19 {
+		padding-right:40px;
+	}
+	.pad-left-percent-19 {
+		padding-left:40px;
+	}	
+	.pad-right-percent-18 {
+		padding-right:28px;
+	}
+	.pad-left-percent-18 {
+		padding-left:28px;
+	}	
+	#input-postcode-s {
+		bottom:15px;
+	}
+
+	/* Drop down Residential - width fix */
+	#res-dropdown.navbar-nav > li > a {
+	width:120%;
+	padding-top: 6px;
+	padding-left: 25px;
+	padding-bottom: 15px;
+	font-family: 'bariol_regularregular';
+	}
+	/* Drop down Residential opened - width fix */
+	#res-dropdown.navbar-default .navbar-nav > .open > a {
+	width:120%;
+	}
+
+	
+	#ldh-1, #ldp-1 {
+	margin-left:0!important;
+	}	
+	
+
+	#footer-social-icons {
+		margin-left: 0px!important;
+		padding-left:5%;
+		float:left!important;
+	}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 992px) {
+	
+	/*	Fixing entire container width	*/
+	.pad-right-percent-19 {
+		padding-right:40px;
+	}
+	.pad-left-percent-19 {
+		padding-left:40px;
+	}	
+	.pad-right-percent-18 {
+		padding-right:28px;
+	}
+	.pad-left-percent-18 {
+		padding-left:28px;
+	}	
+	#input-postcode-s {
+		bottom:15px;
+	}
+	#ldh-1, #ldp-1 {
+	margin-left:0!important;
+	}	
+	#footer-social-icons {
+		margin-left: 0px!important;
+		padding-left:5%;
+		float:left!important;
+	}
+	
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen 
+and (min-width : 992px) 
+and (max-width : 1200px) {
+	.pad-right-percent-19 {
+		padding-right:40px;
+	}
+	.pad-left-percent-19 {
+		padding-left:40px;
+	}	
+	.pad-right-percent-18 {
+		padding-right:28px;
+	}
+	.pad-left-percent-18 {
+		padding-left:28px;
+	}	
+	#input-postcode-s {
+		bottom:15px;
+	}
+	#ldh-1, #ldp-1 {
+	margin-left:0!important;
+	}	
+
+	#footer-social-icons {
+		margin-left: 0px!important;
+		padding-left:5%;
+		float:left!important;
+	}
+
+}
+
+
+/* Large devices - Special Laptop optimisation - Custom (large desktops, 1200px and up) */
+@media only screen 
+and (min-width : 1200px) 
+and (max-width : 1440px) {
+	.pad-right-percent-19 {
+		padding-right:7.17%;
+	}
+	.pad-left-percent-19 {
+		padding-left:7.17%;
+	}	
+	.pad-right-percent-18 {
+		padding-right:5.01%;
+	}
+	.pad-left-percent-18 {
+		padding-left:5.01%;
+	}	
+
+	#footer-social-icons {
+		margin-left: 0px!important;
+		padding-left:5%;
+		float:left!important;
+	}
+	#input-postcode-s {
+		bottom:15px;
+	}
+
+}
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+
+
+
+}
+
+
+
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+		
+
+
+
+
+}
+
+
+/* Smal to Medium Desktops and laptops resolutions ----------- */
+@media only screen 
+and (min-width : 1024px)
+and (max-width : 1366px) {
+
+
+
+
+}
+
+
+/* Medium to large Desktops and laptops resolutions ----------- */
+@media only screen 
+and (min-width : 1400px) {
+
+
+
+
+}
+
+
+

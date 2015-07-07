@@ -1,0 +1,2267 @@
+/*
+ * ******************************************************************************
+ *  Currently-Installing-Hyperoptic
+ *  file: currently-instaling.css
+ *
+ *  Copyright (c) 2014. Hyperoptic Ltd ; 
+ *  Cable, London - UK
+ *  email: admin@hyperoptic.com
+ *  site: 	http://www.hyperoptic.com
+ *  outher-blog:	http://www..com
+ *
+ *  Licences: MIT, GPL
+ *  http://www.opensource.org/licenses/mit-license.php
+ *  http://www.gnu.org/licenses/gpl.html
+ *
+ *	Artwork inspired by: Under-evaluation.css /
+ *  last modified: 20/12/14 19.53
+ *  *****************************************************************************
+ */
+
+/*******************************************************************************
+ * 
+ * Hyperoptic: 
+ * version: 0.90
+ * Author-of-the-file: Vladimir Veljkovic
+ * Creation date: 20/12/14
+ * Licences: MIT, GPL
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ *
+ ******************************************************************************/
+
+
+
+@charset "utf-8";
+
+
+{
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x:hidden;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*	Fonts for all browsers   */
+@font-face {
+    font-family: 'bariol_boldbold';
+    src: url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.eot');
+    src: url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.woff2') format('woff2'),
+         url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.woff') format('woff'),
+         url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.ttf') format('truetype'),
+         url('../font/Bariol/Bariol_Bold/bariol_bold-webfont.svg#bariol_boldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bariol_lightlight';
+    src: url('../font/Bariol/Bariol_Light/bariol_light-webfont.eot');
+    src: url('../font/Bariol/Bariol_Light/bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bariol/Bariol_Light/bariol_light-webfont.woff2') format('woff2'),
+         url('../font/Bariol/Bariol_Light/bariol_light-webfont.woff') format('woff'),
+         url('../font/Bariol/Bariol_Light/bariol_light-webfont.ttf') format('truetype'),
+         url('../font/Bariol/Bariol_Light/bariol_light-webfont.svg#bariol_lightlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bariol_regularregular';
+    src: url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.eot');
+    src: url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.woff2') format('woff2'),
+         url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.woff') format('woff'),
+         url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.ttf') format('truetype'),
+         url('../font/Bariol/Bariol_Regular/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bariolthin';
+    src: url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.eot');
+    src: url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.woff2') format('woff2'),
+         url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.woff') format('woff'),
+         url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.ttf') format('truetype'),
+         url('../font/Bariol/Bariol_Thin/bariol_thin-webfont.svg#bariolthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*a:hover {
+	text-decoration:none; 
+}*/
+
+/*	Headers   */
+h1 { 
+    display: block;
+    font-size: 1.6em;
+    margin-top: 0.875em;
+    margin-bottom: -0.125em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 400;
+	text-align:center;
+	color:#111111;
+}
+h3 { 
+    display: block;
+    font-size: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 400;
+	text-align:center;
+	color:#111111;
+}
+
+
+
+
+
+/*========================================*/
+/*===    Header - For more pages     ===*/
+/*======================================*/
+
+
+
+/*#header {
+position: relative;
+width:60%; 
+height:145px;
+margin:0 auto;
+padding: 0;
+top: 1%;
+z-index:2;
+background-color:#C34244;
+}*/
+
+/* Top navbar fixes for Bootstrap  CSS */
+.navbar-default {
+background-color: transparent; 
+border:none;
+}
+
+
+.navbar {
+position: relative;
+min-height: 50px;
+margin-bottom: 0px; 
+border: 1px solid transparent;
+}
+
+.navbar-nav {
+margin: 0px 0px; 
+}
+
+.navbar-collapse {
+padding-right:0px; 
+padding-left: 0px;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form, .navbar-default .navbar-toggle {
+border:none;
+}
+
+/* Tree bars TOST for toogle menu */
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+color: #333;
+background-color: transparent; 
+border-color: transparent;
+}
+.navbar-toggle {
+position: relative;
+float: right;
+padding: 9px 0px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 8px;
+background-color: transparent;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+/* Drop down Residential - width fix */
+#res-dropdown.navbar-nav > li > a {
+width:157%;
+padding-top: 6px;
+padding-left: 25px;
+padding-bottom: 15px;
+font-family: 'bariol_regularregular';
+}
+/* Drop down Residential opened - width fix */
+#res-dropdown.navbar-default .navbar-nav > .open > a {
+width:157%;
+}
+
+/* Input field for postcode search - usualy in header nav */
+.input-postcode {
+display: block;
+width: 100%;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #B1B1B1;
+background-color: #dbdbdb;
+background-image: none;
+border: none;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/* Input field for Registering interest - usualy used for collecting data about costumers */
+.input-ri {
+display: block;
+width: 100%;
+height: 40px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #1D1D1B;
+background-color: #dbdbdb;
+background-image: none;
+border: none;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/* Button for select view mode - usualy in header nav */
+.btn-group-select-400 {
+width:70%;
+max-width:400px;
+}
+.btn-group-select-120 {
+width:70%;
+max-width:120px;
+}
+.btn-select {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-family: 'bariol_regularregular';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+
+/* Drop down Register interest - width fix */
+#ri-dropdown.navbar-nav > li > a {
+min-width:98px;
+max-height:40px;
+padding-top: 8px;
+padding-left: 25px;
+padding-bottom: 15px;
+font-family: 'bariol_regularregular';
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #dedfe0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dedfe0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#dedfe0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedfe0',GradientType=0 ); /* IE6-9 */
+border-radius: 6px;
+border:1px solid #B3B5B7;
+}
+/* Dropdown (Select) double line setup */
+#ri-dropdown.navbar-nav > li > a:before {
+  content : "";
+  position: absolute;
+  right    : -2px;
+  bottom  : -2px;
+  height  : 93%;
+  width: 96%;
+  border-right: 0.1em solid #919397;
+  border-bottom: 0.1em solid #919397;
+  border-bottom-right-radius: 6px;
+}
+/* Dropdown (Select) vertical line on midle */
+#ri-dropdown.navbar-nav > li > a:after {	
+ content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 60%;
+    border-left: 1px solid #B3B5B7;
+}
+/* Drop down Register interest opened - width fix */
+#ri-dropdown.navbar-default .navbar-nav > .open > a {
+width:157%;
+min-width:80px;
+}
+
+
+
+/* Drop down Register Big interest - width fix */
+#ri-dropdown-big  {
+width:100%;
+}
+	
+#ri-dropdown-big.navbar-nav > li > a {
+width:100%;
+min-width:414px;
+max-height:40px;
+padding-top: 8px;
+padding-left: 25px;
+padding-bottom: 15px;
+font-family: 'bariol_regularregular';
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #dedfe0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dedfe0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#dedfe0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedfe0',GradientType=0 ); /* IE6-9 */
+border-radius: 6px;
+border:1px solid #B3B5B7;
+}
+/* Dropdown (Select) double line setup */
+#ri-dropdown-big.navbar-nav > li > a:before {
+  content : "";
+  position: absolute;
+  right    : -2px;
+  bottom  : -2px;
+  height  : 93%;
+  width: 99%;
+  border-right: 0.1em solid #919397;
+  border-bottom: 0.1em solid #919397;
+  border-bottom-right-radius: 6px;
+}
+/* Dropdown (Select) vertical line on midle */
+#ri-dropdown-big.navbar-nav > li > a:after {	
+ content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 88%;
+    border-left: 1px solid #B3B5B7;
+}
+/* Drop down Register interest opened - width fix */
+#ri-dropdown-big.navbar-default .navbar-nav > .open > a {
+width:157%;
+min-width:80px;
+}
+
+
+
+
+/* Popup Register Your interest medium size - width fix */
+#ri-pop-dropdown-medium  {
+width:100%;
+}
+	
+#ri-pop-dropdown-medium.navbar-nav > li > a {
+width:100%;
+min-width:262px;
+max-height:40px;
+padding-top: 8px;
+padding-left: 25px;
+padding-bottom: 15px;
+font-family: 'bariol_regularregular';
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #dedfe0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dedfe0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#dedfe0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#dedfe0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedfe0',GradientType=0 ); /* IE6-9 */
+border-radius: 6px;
+border:1px solid #B3B5B7;
+}
+/* Dropdown (Select) double line setup */
+#ri-pop-dropdown-medium.navbar-nav > li > a:before {
+  content : "";
+  position: absolute;
+  right    : -2px;
+  bottom  : -2px;
+  height  : 93%;
+  width: 99%;
+  border-right: 0.1em solid #919397;
+  border-bottom: 0.1em solid #919397;
+  border-bottom-right-radius: 6px;
+}
+/* Dropdown (Select) vertical line on midle */
+#ri-pop-dropdown-medium.navbar-nav > li > a:after {	
+ content:"";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 86%;
+    border-left: 1px solid #B3B5B7;
+}
+/* Drop down Register interest opened - width fix */
+#ri-pop-dropdown-medium.navbar-default .navbar-nav > .open > a {
+width:157%;
+min-width:80px;
+}
+
+
+
+
+
+
+/* UL for Registering interest pages */
+#ri-ul1 {
+list-style:none;
+line-height:34px;
+}
+
+
+/* UL for Modal window that show postcodes */
+#mw-ul1 {
+padding-top: 15px;
+padding-left: 0;
+list-style: none;
+line-height: 34px;
+}
+#mw-ul1 li {
+border-bottom:1px solid #D8D8D8;
+}
+
+/* Empty column left on Currently installing page */
+.column-ci-empty {
+height:60px;
+}
+
+
+
+/* Footer */
+#footer-social-icons {
+margin-left: 25%;
+height:105px;
+}
+
+
+/*========================================*/
+/*=== Content - Custom for every page ===*/
+/*======================================*/
+
+
+/* Google Map customisation */
+#map-canvas {
+position:relative;
+width:100%;
+height:380px;
+max-width: 100%;
+}
+
+#map-description {
+position:absolute;
+width:200px;
+height:130px;
+margin-top:25px;
+margin-left:19%;
+background-color: rgba(255,255,255,0.92);
+z-index:5;
+}
+
+/* Marker size for KEY description */
+.marker-size-1 {
+width:18px;
+height:24px;
+}
+
+/* Google Map Info window redesign - Location Description */
+
+/* Window design */
+
+#locationDescription {
+position:absolute;
+width:232px;
+height:308px;
+opacity:0;
+z-index:5;
+}
+/* Arow and bgd */
+.arrow_box {
+	position: relative;
+	background: #ffffff;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border: 1px solid rgba(158, 153, 147, 0.5);
+    box-shadow: 0px 1px 1px rgba(136, 136, 136, 0.3);
+}
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #ffffff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.arrow_box:before {
+	border-color: rgba(158, 153, 147, 0);
+	border-left-color: #9e9993;
+	border-width: 11px;
+	margin-top: -11px;
+}
+/* Arow box Top bg for progress hover effect */
+.ab-progress-h {
+	position: relative;
+	background: #fff;
+}
+.ab-progress-h:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+/* Status Element */
+#ldg-1 {
+position:absolute;
+width:100%;
+height:45px;
+background-color:#939498;
+}
+
+
+/* Window design */
+/* Registring Interest  */
+#locationDescription-ri {
+}
+/* Arow and bgd */
+.list-box-bg {
+	position: relative;
+	background: #ffffff;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	border: 1px solid rgba(158, 153, 147, 0.3);
+	border-bottom:none;
+    box-shadow: 0px 1px 1px rgba(136, 136, 136, 0.4);
+}
+
+/* Image of site (s1) style option 1 */
+.ld-img-s1 {
+width:100%;
+padding-top:5%;
+padding-right:5%;
+padding-left:5%;
+}
+/* Image of site (s2) style option 2 - list view */
+.ld-img-s2 {
+width:100%;
+padding-top:15px;
+padding-bottom:15px;
+}
+
+/* Marker Element positioning inside Location description */
+.marker-grid-view {
+margin-right:13px;
+margin-top:24px;
+}
+
+/* Name */
+#ld-name-container{
+	width:100%;
+}
+
+
+/* Status Element list container */
+#status-group-list {
+width:100%;
+}
+/* Status Element blue - Accepting Orders Interest gid view */
+#ldb-1 {
+width:100%;
+height:100%;
+background-color:#009fe3;
+}
+
+#ldlg-1 {
+line-height: 100%;
+background-color: #929497;
+padding-top: 6px;
+padding-bottom: 1px;
+}
+#ldlb-1 {
+line-height: 100%;
+background-color: #929497;
+padding-top: 6px;
+padding-bottom: 1px;
+background-color:#009fe3;
+}
+/* View all assigned postcodes */
+#vaap {
+font-size:12px;
+color:#1c9ad7;
+cursor:pointer;
+}
+/* Baner for registering interest pages */
+#under-evaluation-bb {
+margin-top:5.5%;
+margin-bottom:60px;
+width:100%;
+}
+/* Personal image of agent */
+#personal-image {
+width:100%;
+max-width:274px;
+}
+/* Registering interest with postcode after header */
+#ri-menu-container {
+border-left:5px solid #efefef;
+}
+
+
+/* Registering interest Progres box with Green indicator */
+.progress-done {
+margin-top:4px;
+width:14px;
+height:14px;
+float:left;
+background-color:#39a935;
+color:#575756;
+}
+.ppd {
+color:#575756;
+}
+/* Registering interest Progres box with empty indicator */
+.progress-undone {
+margin-top:4px;
+width:14px;
+height:14px;
+float:left;
+background-color:transparent;
+border:1px solid #919295;
+}
+.ppud {
+color:#9c9b9b;
+}
+/* Registering interest Progres Hover box info */
+#progress-hover {
+width:200px;
+height:80px;
+color:#808184;
+border-radius:5px;
+opacity: 0;
+position: absolute;
+left: 45%;
+top:96%;
+z-index: 5;
+}
+/* Registering interest Progres Hover box info */
+#ph-p {
+text-align: justify;
+width: 92%;
+padding-top: 7px;
+margin-left: 7px;
+line-height: 16px;
+}
+
+/* Registering interest Popup */
+/* Entire container for popup */
+#register-popup {
+margin-top: 52px;
+position: absolute;
+z-index: 3;
+}
+/* Display None popup for toggle class function*/
+.register-popup-d-n {
+display:none;
+}
+/* Display Block popup for toggle class function*/
+.register-popup-d-b {
+display:block;
+}
+
+
+/* Form input field for registering interest */
+.ri-form1 {
+display: block;
+width: 100%;
+height: 34px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #221C1C;
+background-color: #DBDBDB;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#install-adress {
+width:95%;
+background-color:#dbdbdb;
+}
+/*==============================*/
+/*===   Universal styles    ===*/
+/*==========================*=*/
+
+/* ********************* */
+/*   Width settings     */
+/* =================== */
+.w-100 {
+width:100%;
+}
+.w-99 {
+width:99%;
+}
+.w-94 {
+width:94%;
+}
+.w-93 {
+width:93%;
+}
+.w-92 {
+width:92%;
+}
+.w-90 {
+width:90%;
+}
+.w-50 {
+width:50%;
+}
+.w-55 {
+width:55%;
+}
+
+
+/* ***************** */
+/*      Color       */
+/* =============== */
+
+/*   Font color   */
+.white-f-fff {
+color:#ffffff;
+}
+.black-f-000 {
+color:#000000;
+}
+.black-f-1 {
+color:#221e20!important;
+}
+.gray-f-1 {
+color:#6c6e73;
+}
+.gray-f-2 {
+color:#838589;
+}
+.gray-f-3 {
+color:#929293;
+}
+.gray-f-4 {
+color:#a3a3a6;
+}
+.gray-f-5 {
+color:#F0F0F0;
+}
+
+.blue-navy-f-1 {
+color:#19a6e4;
+}
+.blue-navy-f-2 {
+color:#1c9ad7;
+}
+
+
+
+
+/*  Background color  */
+.gray-bg-1 {
+background-color:#efefef;
+}
+.gray-bg-2 {
+background-color:#929497;
+}
+.gray-bg-3 {
+background-color:#e5e5e5;
+} 
+
+/* ********************* */
+/*    Font settings     */
+/* =================== */
+
+/* Font size */
+.font-10 {
+font-size:1em;
+}
+.font-11 {
+font-size:1.1em;
+}
+
+.font-12 {
+font-size:1.2em;
+}
+.font-13 {
+font-size:1.3em;
+}
+
+.font-14 {
+font-size:1.4em;
+}
+.font-15 {
+font-size:1.5em;
+}
+.font-16 {
+font-size:1.6em;
+}
+
+.font-18 {
+font-size:1.8em;
+}
+.font-20 {
+font-size:2.0em;
+}
+.font-21 {
+font-size:2.1em;
+}
+
+.font-22 {
+font-size:2.2em;
+}
+.font-24 {
+font-size:2.4em;
+}
+.font-26 {
+font-size:2.6em;
+}
+.font-28 {
+font-size:2.8em;
+}
+.font-30 {
+font-size:3.0em;
+}
+.font-32 {
+font-size:3.2em;
+}
+.font-34 {
+font-size:3.4em;
+}
+.font-36 {
+font-size:3.6em;
+}
+.font-38 {
+font-size:3.8em;
+}
+.font-40 {
+font-size:4.0em;
+}
+.font-42 {
+font-size:4.2em;
+}
+
+
+.font-50 {
+font-size:5.0em;
+}
+
+/*  Font weight  */
+.font-w-300 {
+font-weight:300;
+}
+.font-w-400 {
+font-weight:400;
+}
+.font-w-500 {
+font-weight:500;
+}
+.font-w-600 {
+font-weight:600;
+}
+.font-w-700 {
+font-weight:700;
+}
+.font-w-800 {
+font-weight:800;
+}
+.font-w-900 {
+font-weight:900;
+}
+
+/* Font family */
+.font-f-bariol-thin {
+font-family: 'bariol_thinthin';
+}
+.font-f-bariol-light {
+font-family: 'bariol_lightlight';
+}
+.font-f-bariol-regular {
+font-family: 'bariol_regularregular';
+}
+.font-f-bariol-bold {
+font-family: 'bariol_boldbold';
+}
+
+
+/* ***************************/
+/*  Border setings classe   */
+/* ======================= */
+
+
+/* No border */
+.border-none {
+border:none;
+}
+
+/* Border 1px Solid Gray */
+.b-t-1px-gray {
+border-top: 1px solid #c0c0c2;
+}
+.b-r-1px-gray {
+border-right: 1px solid #c0c0c2;
+}
+.b-b-1px-gray {
+border-bottom: 1px solid #c0c0c2;
+}
+.b-l-1px-gray {
+border-left: 1px solid #c0c0c2;
+}
+/* Border 1px Solid Gray ALL */
+.b-all-1px-gray {
+border: 1px solid #c0c0c2;
+}
+
+/* Border 1px Solid Light Gray */
+.b-t-1px-l-gray {
+border-top: 1px solid #D8D8D8;
+}
+.b-r-1px-l-gray {
+border-right: 1px solid #D8D8D8;
+}
+.b-b-1px-l-gray {
+border-bottom: 1px solid #D8D8D8;
+}
+.b-l-1px-l-gray {
+border-left: 1px solid #D8D8D8;
+}
+/* Border 1px Solid Gray ALL */
+.b-all-1px-l-gray {
+border: 1px solid #D8D8D8;
+}
+
+/* ***************** */
+/* Button settings  */
+/* =============== */
+
+
+/* Submit button */
+.btn-primary {
+height:45px;
+width:120px;
+background-color:#1C9AD7;
+border:none;
+}
+
+/* Register button */
+.register-button {
+height: 40px;
+width: 100%;
+color:#FFFFFF;
+background-color: #1C9AD7;
+border: none;
+}
+
+
+/* ***************** */
+/* Paddings classe  */
+/* =============== */
+
+/*   RESET Padding TO 0px  */
+/* Padding 0 px  */
+.pad-top-percent-0 {
+padding-top:0;
+}
+.pad-right-percent-0 {
+padding-right:0;
+}
+.pad-bottom-percent-0 {
+padding-bottom:0;
+}
+.pad-left-percent-0 {
+padding-left:0;
+}
+/*   Padding ALL 0   */
+
+.pad-all-0 {
+padding:0px;
+}
+
+/* Padding 0.5 px  */
+.pad-top-percent-05 {
+padding-top:0.5%;
+}
+.pad-right-percent-05 {
+padding-right:0.5%;
+}
+.pad-bottom-percent-05 {
+padding-bottom:0.5%;
+}
+.pad-left-percent-05 {
+padding-left:0.5%;
+}
+/*   Padding ALL 05   */
+
+.pad-all-05 {
+padding:0.5%;
+}
+
+
+/*  Percent paddings	*/
+
+/* Padding 1 percent  */
+.pad-top-percent-1 {
+padding-top:1%;
+}
+.pad-right-percent-1 {
+padding-right:1%;
+}
+.pad-bottom-percent-1 {
+padding-bottom:1%;
+}
+.pad-left-percent-1 {
+padding-left:1%;
+}
+/*   Padding ALL 1   */
+.pad-all-percent-1 {
+padding:1%;
+}
+
+/* Padding 2 percent  */
+.pad-top-percent-2 {
+padding-top:2%;
+}
+.pad-right-percent-2 {
+padding-right:2%;
+}
+.pad-bottom-percent-2 {
+padding-bottom:2%;
+}
+.pad-left-percent-2 {
+padding-left:2%;
+}
+/*   Padding ALL 2   */
+.pad-all-percent-2 {
+padding:2%;
+}
+
+
+
+/* Padding 5 percent   */
+.pad-top-percent-5 {
+padding-top:5%;
+}
+.pad-right-percent-5 {
+padding-right:5%;
+}
+.pad-bottom-percent-5 {
+padding-bottom:5%;
+}
+.pad-left-percent-5 {
+padding-left:5%;
+}
+/*    Padding ALL 5%  */
+.pad-all-percent-5 {
+padding:5%;
+}
+
+/* Padding 10 percent   */
+.pad-top-percent-10 {
+padding-top:10%;
+}
+.pad-right-percent-10 {
+padding-right:10%;
+}
+.pad-bottom-percent-10 {
+padding-bottom:10%;
+}
+.pad-left-percent-10 {
+padding-left:10%;
+}
+/*    Padding ALL 10%  */
+.pad-all-percent-10 {
+padding:10%;
+}
+
+/* Padding 11 percent   */
+.pad-top-percent-11 {
+padding-top:11%;
+}
+.pad-right-percent-11 {
+padding-right:11%;
+}
+.pad-bottom-percent-11 {
+padding-bottom:11%;
+}
+.pad-left-percent-11 {
+padding-left:11%;
+}
+/*    Padding ALL 11%  */
+.pad-all-percent-11 {
+padding:11%;
+}
+
+/* Padding 15 percent   */
+.pad-top-percent-15 {
+padding-top:15%;
+}
+.pad-right-percent-15 {
+padding-right:15%;
+}
+.pad-bottom-percent-15 {
+padding-bottom:15%;
+}
+.pad-left-percent-15 {
+padding-left:15%;
+}
+/*    Padding ALL 15%  */
+.pad-all-percent-15 {
+padding:15%;
+}
+
+/* Specialy created paddings to get 1070px wid nad fluid   */
+/* Padding 18 percent   */
+.pad-top-percent-18 {
+padding-top:18.25%;
+}
+.pad-right-percent-18 {
+padding-right:18.25%;
+}
+.pad-bottom-percent-18 {
+padding-bottom:18.25%;
+}
+.pad-left-percent-18 {
+padding-left:18.25%;
+}
+/*    Padding ALL 18%  */
+.pad-all-percent-18 {
+padding:18.25%;
+}
+
+/* Padding 19.53 percent  */
+.pad-top-percent-19 {
+padding-top:19.53%;
+}
+.pad-right-percent-19 {
+padding-right:19.53%;
+}
+.pad-bottom-percent-19 {
+padding-bottom:19.53%;
+}
+.pad-left-percent-19 {
+padding-left:19.53%;
+}
+/*   Padding ALL 19.53   */
+.pad-all-percent-19 {
+padding:19.53%;
+}
+
+
+/* Padding 20 percent   */
+.pad-top-percent-20 {
+padding-top:20%;
+}
+.pad-right-percent-20 {
+padding-right:20%;
+}
+.pad-bottom-percent-20 {
+padding-bottom:20%;
+}
+.pad-left-percent-20 {
+padding-left:20%;
+}
+/*    Padding ALL 20%  */
+.pad-all-percent-20 {
+padding:20%;
+}
+
+
+/*  	Padding fixed lenght	*/
+
+
+
+/* Padding 5 px   */
+.pad-top-fixed-5 {
+padding-top:5px;
+}
+.pad-right-fixed-5 {
+padding-right:5px;
+}
+.pad-bottom-fixed-5 {
+padding-bottom:5px;
+}
+.pad-left-fixed-5 {
+padding-left:5px;
+}
+/*    Padding ALL 5px  */
+.pad-all-fixed-5 {
+padding:5px;
+}
+
+/* Padding 10 px   */
+.pad-top-fixed-10 {
+padding-top:10px;
+}
+.pad-right-fixed-10 {
+padding-right:10px;
+}
+.pad-bottom-fixed-10 {
+padding-bottom:10px;
+}
+.pad-left-fixed-10 {
+padding-left:10px!important;
+}
+/*    Padding ALL 10px  */
+.pad-all-fixed-10 {
+padding:10px;
+}
+
+/* Padding 15 px   */
+.pad-top-fixed-15 {
+padding-top:15px;
+}
+.pad-right-fixed-15 {
+padding-right:15px;
+}
+.pad-bottom-fixed-15 {
+padding-bottom:15px;
+}
+.pad-left-fixed-15 {
+padding-left:15px;
+}
+/*    Padding ALL 15px  */
+.pad-all-fixed-15 {
+padding:15px;
+}
+
+/* Padding 20 px   */
+.pad-top-fixed-20 {
+padding-top:20px;
+}
+.pad-right-fixed-20 {
+padding-right:20px;
+}
+.pad-bottom-fixed-20 {
+padding-bottom:20px;
+}
+.pad-left-fixed-20 {
+padding-left:20px;
+}
+/*    Padding ALL 20px  */
+.pad-all-fixed-20 {
+padding:20px;
+}
+
+/* Padding 25 px   */
+.pad-top-fixed-25 {
+padding-top:25px;
+}
+.pad-right-fixed-25 {
+padding-right:25px;
+}
+.pad-bottom-fixed-25 {
+padding-bottom:25px;
+}
+.pad-left-fixed-25 {
+padding-left:25px;
+}
+/*    Padding ALL 25px  */
+.pad-all-fixed-25 {
+padding:25px;
+}
+
+/* Padding 30 px   */
+.pad-top-fixed-30 {
+padding-top:30px;
+}
+.pad-right-fixed-30 {
+padding-right:30px;
+}
+.pad-bottom-fixed-30 {
+padding-bottom:30px;
+}
+.pad-left-fixed-30 {
+padding-left:30px;
+}
+/*    Padding ALL 30px  */
+.pad-all-fixed-30 {
+padding:30px;
+}
+/* Padding 45 px   */
+.pad-top-fixed-45 {
+padding-top:45px;
+}
+.pad-right-fixed-45 {
+padding-right:45px;
+}
+.pad-bottom-fixed-45 {
+padding-bottom:45px;
+}
+.pad-left-fixed-45 {
+padding-left:45px;
+}
+/*    Padding ALL 45px  */
+.pad-all-fixed-45 {
+padding:45px;
+}
+
+/* Padding 60 px   */
+.pad-top-fixed-60 {
+padding-top:60px;
+}
+.pad-right-fixed-60 {
+padding-right:60px;
+}
+.pad-bottom-fixed-60 {
+padding-bottom:60px;
+}
+.pad-left-fixed-60 {
+padding-left:60px;
+}
+/*    Padding ALL 60px  */
+.pad-all-fixed-60 {
+padding:60px;
+}
+
+
+/* Padding 100 px   */
+.pad-top-fixed-100 {
+padding-top:100px;
+}
+.pad-right-fixed-100 {
+padding-right:100px;
+}
+.pad-bottom-fixed-100 {
+padding-bottom:100px;
+}
+.pad-left-fixed-100 {
+padding-left:100px;
+}
+/*    Padding ALL 100px  */
+.pad-all-fixed-100 {
+padding:100px;
+}
+
+/* **************************** */
+/*    Margin settings classe    */
+/* ========================== */
+
+/* Percent margin	*/
+
+/* Margin 0 percent  */
+.marg-top-percent-0 {
+margin-top:0%;
+}
+.marg-right-percent-0 {
+margin-right:0%;
+}
+.marg-bottom-percent-0 {
+margin-bottom:0%;
+}
+.marg-left-percent-0 {
+margin-left:0%;
+
+}
+/*   Margin ALL 0%   */
+.marg-all-percent-0 {
+margin:0%;
+}
+
+/* Margin 1 percent  */
+.marg-top-percent-1 {
+margin-top:1%;
+}
+.marg-right-percent-1 {
+margin-right:1%;
+}
+.marg-bottom-percent-1 {
+margin-bottom:1%;
+}
+.marg-left-percent-1 {
+margin-left:1%;
+}
+/*   Margin ALL 1%   */
+.marg-all-percent-1 {
+margin:1%;
+}
+
+/* Margin 2 percent  */
+.marg-top-percent-2 {
+margin-top:2%;
+}
+.marg-right-percent-2 {
+margin-right:2%;
+}
+.marg-bottom-percent-2 {
+margin-bottom:2%;
+}
+.marg-left-percent-2 {
+margin-left:2%;
+}
+/*   Margin ALL 2%   */
+.marg-all-percent-2 {
+margin:2%;
+}
+
+/* Margin 10 percent  */
+.marg-top-percent-10 {
+margin-top:10%;
+}
+.marg-right-percent-10 {
+margin-right:10%;
+}
+.marg-bottom-percent-10 {
+margin-bottom:10%;
+}
+.marg-left-percent-10 {
+margin-left:10%;
+}
+/*   Margin ALL 10%   */
+.marg-all-percent-10 {
+margin:10%;
+}
+
+
+/*	 Margin fixed lenght	*/
+
+/*        Margin -5 px         */
+.marg-top-fixed-m5 {
+margin-top:-5px;
+}
+.marg-right-fixed-m5 {
+margin-right:-5px;
+}
+.marg-bottom-fixed-m5 {
+margin-bottom:-5px;
+}
+.marg-left-fixed-m5 {
+margin-left:-5px!important;
+}
+/*   Margin ALL m5px   */
+.marg-all-fixed-m5 {
+margin:-5px;
+}
+
+/*        Margin 5 px         */
+.marg-top-fixed-5 {
+margin-top:5px;
+}
+.marg-right-fixed-5 {
+margin-right:5px;
+}
+.marg-bottom-fixed-5 {
+margin-bottom:5px;
+}
+.marg-left-fixed-5 {
+margin-left:5px!important;
+}
+/*   Margin ALL 5px   */
+.marg-all-fixed-5 {
+margin:5px;
+}
+
+/*        Margin 10 px         */
+.marg-top-fixed-10 {
+margin-top:10px;
+}
+.marg-right-fixed-10 {
+margin-right:10px;
+}
+.marg-bottom-fixed-10 {
+margin-bottom:10px;
+}
+.marg-left-fixed-10 {
+margin-left:10px!important;
+}
+/*   Margin ALL 10px   */
+.marg-all-fixed-10 {
+margin:10px;
+}
+
+
+/*        Margin 15 px         */
+.marg-top-fixed-15 {
+margin-top:15px;
+}
+.marg-right-fixed-15 {
+margin-right:15px;
+}
+.marg-bottom-fixed-15 {
+margin-bottom:15px;
+}
+.marg-left-fixed-15 {
+margin-left:15px!important;
+}
+/*   Margin ALL 15px   */
+.marg-all-fixed-15 {
+margin:15px;
+}
+
+
+/*        Margin 20 px         */
+.marg-top-fixed-20 {
+margin-top:20px;
+}
+.marg-right-fixed-20 {
+margin-right:20px;
+}
+.marg-bottom-fixed-20 {
+margin-bottom:20px;
+}
+.marg-left-fixed-20 {
+margin-left:20px!important;
+}
+/*   Margin ALL 20px   */
+.marg-all-fixed-20 {
+margin:20px;
+}
+
+/*        Margin 30 px         */
+.marg-top-fixed-30 {
+margin-top:30px;
+}
+.marg-right-fixed-30 {
+margin-right:30px;
+}
+.marg-bottom-fixed-30 {
+margin-bottom:30px;
+}
+.marg-left-fixed-30 {
+margin-left:30px!important;
+}
+/*   Margin ALL 30px   */
+.marg-all-fixed-30 {
+margin:30px;
+}
+
+/*        Margin 50 px         */
+.marg-top-fixed-50 {
+margin-top:50px;
+}
+.marg-right-fixed-50 {
+margin-right:50px;
+}
+.marg-bottom-fixed-50 {
+margin-bottom:50px;
+}
+.marg-left-fixed-50 {
+margin-left:50px!important;
+}
+/*   Margin ALL 50px   */
+.marg-all-fixed-50 {
+margin:50px;
+}
+
+
+/*        Margin 100 px         */
+.marg-top-fixed-100 {
+margin-top:100px;
+}
+.marg-right-fixed-100 {
+margin-right:100px;
+}
+.marg-bottom-fixed-100 {
+margin-bottom:100px;
+}
+.marg-left-fixed-100 {
+margin-left:100px!important;
+}
+/*   Margin ALL 100px   */
+.marg-all-fixed-100 {
+margin:100px;
+}
+
+/*        Margin 104 px         */
+.marg-top-fixed-104 {
+margin-top:104px;
+}
+.marg-right-fixed-104 {
+margin-right:104px;
+}
+.marg-bottom-fixed-104 {
+margin-bottom:104px;
+}
+.marg-left-fixed-104 {
+margin-left:104px!important;
+}
+/*   Margin ALL 104px   */
+.marg-all-fixed-104 {
+margin:104px;
+}
+
+
+/*        Margin 150 px         */
+.marg-top-fixed-150 {
+margin-top:150px;
+}
+.marg-right-fixed-150 {
+margin-right:150px;
+}
+.marg-bottom-fixed-150 {
+margin-bottom:150px;
+}
+.marg-left-fixed-150 {
+margin-left:150px!important;
+}
+/*   Margin ALL 150px   */
+.marg-all-fixed-150 {
+margin:150px;
+}
+
+
+
+/* ******************************************* */
+/*    Positioning - Top Right Bottom  Left    */
+/* ========================================= */
+
+
+
+/*    10 px       */
+.top-fixed-10 {
+top:10px;
+}
+.right-fixed-10 {
+bottom-bottom:150px;
+}
+.bott-fixed-10 {
+bottom:10px;
+}
+left-fixed-10 {
+left:10px;
+}
+
+/* ************************* */
+/*    Display settings    */
+
+/* ======================= */
+
+.dis-block  {
+display:block;
+}
+.dis-inline   {
+display:inline;
+}
+.dis-inline-b   {
+display:inline-block;
+}
+
+
+/* ************************* */
+/*          Align           */
+/* ======================= */
+
+.vertical-baseline  {
+vertical-align:baseline
+}
+
+
+
+/* ************************* */
+/*    Paragraph settings    */
+/* ======================= */
+
+.l-h-small {
+    line-height: 80%;
+}
+.l-h-100 {
+    line-height: 100%;
+}
+.l-h-130 {
+    line-height: 130%;
+}
+.l-h-big {
+    line-height: 200%;
+}
+
+.l-h-15px {
+    line-height: 15px;
+}
+.l-h-23px {
+    line-height: 23px;
+}
+
+.l-h-39px {
+    line-height: 39px;
+}
+
+.let-space-minus-05 {
+	letter-spacing:-0.05em;
+}
+
+
+/* ************************* */
+/* Graphic elements classe  */
+/* ======================= */
+
+/* Arow downm    for dropdown menu and buttons */
+.arow-down-s {
+position:absolute;
+background: url(../images/select-bottom-arow-icon.png) no-repeat right;
+width: 10px;
+height:6px;
+right: 17%!important;
+bottom: 40%;
+-webkit-appearance: none;
+border: none;
+}
+
+/* Arow downm for dropdown menu and buttons used in Registering interest forms and data collecting */
+.arow-down-ri {
+position:absolute;
+background: url(../images/select-bottom-arow2-icon.png) no-repeat right;
+width: 14px;
+height:11px;
+right: 14%!important;
+bottom: 38%;
+-webkit-appearance: none;
+border: none;
+}
+/* Arow downm BIG for dropdown menu and buttons used in Registering interest forms and data collecting */
+.arow-down-ri-big {
+position:absolute;
+background: url(../images/select-bottom-arow2-icon.png) no-repeat right;
+width: 14px;
+height:11px;
+right: 4%!important;
+bottom: 38%;
+-webkit-appearance: none;
+border: none;
+}
+#border-bottom-1 {
+width:120%;	
+}
+
+/* Progress green container for loader and showing progress status */
+.progress-green {
+width:68%;
+height: 30px;
+margin-top: 15px;
+margin-bottom: 15px;
+overflow: hidden;
+background-color: #cbcccd;
+border-radius: 10px;
+cursor:pointer;
+}
+/*.progress-green:hover + #progress-hover {
+opacity:0;
+}*/
+/* Progress bar Stripes */
+.progress-bar-striped-cust1 {
+background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .1) 75%, transparent 75%, transparent);
+background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .1) 75%, transparent 75%, transparent);
+background-image: linear-gradient(135deg, rgba(255, 255, 255, .1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .1) 75%, transparent 75%, transparent);
+-webkit-background-size: 40px 40px;
+background-size: 20px 20px;
+}
+/* Progress bar green - actually amount of load */
+.progress-bar-green {
+float: left;
+width: 0;
+height: 100%;
+font-size: 12px;
+line-height: 20px;
+border-radius: 11px;
+color: #fff;
+text-align: center;
+background-color: #37b34a;
+/* -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15); */
+/* box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15); */
+-webkit-transition: width .6s ease;
+-o-transition: width .6s ease;
+transition: width .6s ease;
+}
+
+.progress-bar-green.active {
+-webkit-animation: progress-bar-stripes 2s linear infinite;
+-o-animation: progress-bar-stripes 2s linear infinite;
+animation: progress-bar-stripes 2s linear infinite;
+}
+
+
+/*===============================================*/
+/*=== Modal Window Style for Bootstrap modal ===*/
+/*=============================================*/
+
+/* Change shading of entire browser window */
+.modal-backdrop.in {
+filter: alpha(opacity=50);
+opacity: 0.7;
+}
+/*model window content back ground */
+.modal-content {
+border-radius:0;
+border:none;	
+}
+/* Header style in modal */
+.modal-header {
+color:#009ee3;
+border-bottom:0;
+}
+/* Close button in header */
+.close {
+float: right;
+font-size: 42px;
+font-weight: 200;
+line-height: 1;
+color: #000000;
+}
+/* Body text  */
+.modal-body {
+position: relative;
+padding: 15px;
+font-size: 13px;
+color:#7f8083;
+}
+
+/*=============================*/
+/*===      Animations      ===*/
+/*===========================*/
+/* Progres bar animation */
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+
+/*=============================*/
+/*===     Mobile rady      ===*/
+/*===========================*/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen 
+and (min-width : 0px) 
+and (max-width : 768px) {
+	/* Fixing Gray space betwen page and monitor edge  */
+	.pad-right-percent-19 {
+		padding-right:40px;
+	}
+	.pad-left-percent-19 {
+		padding-left:40px;
+	}	
+	.pad-right-percent-18 {
+		padding-right:28px;
+	}
+	.pad-left-percent-18 {
+		padding-left:28px;
+	} 
+	/* Fixing postcode bottom distance betwen input and map (on map view) */	
+	#input-postcode-s {
+		bottom:15px;
+	}
+
+	/* Drop down Residential - width fix */
+	#res-dropdown.navbar-nav > li > a {
+	width:104%;
+	margin-left:-20px;
+	padding-top: 6px;
+	padding-left: 0px;
+	padding-bottom: 15px;
+	font-family: 'bariol_regularregular';
+	}
+	/* Drop down Residential opened - width fix */
+	#res-dropdown.navbar-default .navbar-nav > .open > a {
+	width:120%;
+	}
+	.arow-down-s {
+		position:absolute;
+		background: url(../images/select-bottom-arow-icon.png) no-repeat right;
+		width: 10px;
+		height:6px;
+		right: 1%!important;
+		bottom: 40%;
+		-webkit-appearance: none;
+		border: none;
+	}
+	#ri-dropdown-big.navbar-nav > li > a {
+		width: 100%;
+		min-width: 214px;
+		max-height: 40px;
+		padding-top: 8px;
+		padding-left: 25px;
+		padding-bottom: 15px;
+		font-family: 'bariol_regularregular';
+		background: #ffffff;
+		background: -moz-linear-gradient(top, #ffffff 0%, #dedfe0 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dedfe0));
+		background: -webkit-linear-gradient(top, #ffffff 0%,#dedfe0 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#dedfe0 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#dedfe0 100%);
+		background: linear-gradient(to bottom, #ffffff 0%,#dedfe0 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedfe0',GradientType=0 );
+		border-radius: 6px;
+		border: 1px solid #B3B5B7;
+	}
+	/* Fixing registering your interest popup dropdown buton*/
+	#ri-pop-dropdown-medium.navbar-nav > li > a {
+		width: 100%;
+		min-width: 214px;
+		max-height: 40px;
+		padding-top: 8px;
+		padding-left: 25px;
+		padding-bottom: 15px;
+		font-family: 'bariol_regularregular';
+		background: #ffffff;
+		background: -moz-linear-gradient(top, #ffffff 0%, #dedfe0 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dedfe0));
+		background: -webkit-linear-gradient(top, #ffffff 0%,#dedfe0 100%);
+		background: -o-linear-gradient(top, #ffffff 0%,#dedfe0 100%);
+		background: -ms-linear-gradient(top, #ffffff 0%,#dedfe0 100%);
+		background: linear-gradient(to bottom, #ffffff 0%,#dedfe0 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedfe0',GradientType=0 );
+		border-radius: 6px;
+		border: 1px solid #B3B5B7;
+	}
+	#ri-pop-dropdown-medium.navbar-nav > li > a:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 89%;
+		border-left: 1px solid #B3B5B7;
+	}
+	/* Fixing Removing border on Building Unknown page */
+	#border-right-1{
+	border-right:none;
+	}
+	#check-box-container {
+	padding-bottom:10px;
+	border-bottom: 1px solid #D8D8D8;
+	}
+	#get-touch-bu {
+	margin-top:10px;
+	padding-bottom:30px;
+	}
+	#lc-bu-list {
+	border-bottom:none;
+	}
+	#ldh-1, #ldp-1 {
+	margin-left:0!important;
+	}
+	/* fixing registgering your interest border */	
+	#ri-menu-container {
+		border-left:0;
+	}		
+	/* fixing under evaluation description container */	
+	#under-evaluation-c {
+	padding-left:0;
+	}
+	/* fixing under evaluation picture and Map right padding */	
+	#ri-location-pic{
+	padding-right:0;
+	}
+	/* fixing Popup elements padding right and left */	
+	.fp-padding-rl{
+		margin-right:0!important;
+		margin-left:0!important;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	/* fixing Popup element email input right and left */	
+	#f-em-i{
+		width:95%;
+		margin-right:0!important;
+		margin-left:15px!important;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	/* fixing Popup element Comments input form padd left */	
+	#f-cm-i{
+		padding-left: 0px;
+	}
+	/* fixing Popup element Comments input form padd left */	
+	#c-box-c-ue {
+		padding-left: 15px;
+	}
+	/* Empty column left on Currently installing page */
+	.column-ci-empty {
+		height:0px;
+	}
+
+
+	#footer-social-icons {
+		margin-left: 0px!important;
+		padding-left:5%;
+		float:left!important;
+	}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 992px) {
+	
+	/*	Fixing entire container width	*/
+	.pad-right-percent-19 {
+		padding-right:40px;
+	}
+	.pad-left-percent-19 {
+		padding-left:40px;
+	}	
+	.pad-right-percent-18 {
+		padding-right:28px;
+	}
+	.pad-left-percent-18 {
+		padding-left:28px;
+	}	
+	#input-postcode-s {
+		bottom:15px;
+	}
+	#border-right-1{
+	border-right:none;
+	}
+	#check-box-container {
+	padding-bottom:10px;
+	border-bottom: 1px solid #D8D8D8;
+	}
+	#get-touch-bu {
+	margin-top:10px;
+	padding-bottom:30px;
+	}
+	#lc-bu-list {
+	border-bottom:none;
+	}
+	#ldh-1, #ldp-1 {
+	margin-left:0!important;
+	}	
+
+	
+	
+	#ldh-1, #ldp-1 {
+	margin-left:0!important;
+	}
+	
+	/* fixing baners width in registering interest pages */	
+	#under-evaluation-bb {
+	padding-right:15px;
+	}
+		
+	#footer-social-icons {
+		margin-left: 0px!important;
+		padding-left:5%;
+		float:left!important;
+	}
+	
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen 
+and (min-width : 992px) 
+and (max-width : 1200px) {
+	.pad-right-percent-19 {
+		padding-right:40px;
+	}
+	.pad-left-percent-19 {
+		padding-left:40px;
+	}	
+	.pad-right-percent-18 {
+		padding-right:28px;
+	}
+	.pad-left-percent-18 {
+		padding-left:28px;
+	}	
+	#input-postcode-s {
+		bottom:15px;
+	}
+	#border-right-1{
+	border-right:none;
+	}
+	#check-box-container {
+	padding-bottom:10px;
+	border-bottom: 1px solid #D8D8D8;
+	}
+	#get-touch-bu {
+	margin-top:10px;
+	padding-bottom:30px;
+	}
+	#lc-bu-list {
+	border-bottom:none;
+	}
+	#ldh-1, #ldp-1 {
+	margin-left:0!important;
+	}	
+
+	#ldh-1, #ldp-1 {
+	margin-left:0!important;
+	}	
+
+
+	#footer-social-icons {
+		margin-left: 0px!important;
+		padding-left:5%;
+		float:left!important;
+	}
+
+}
+
+
+/* Large devices - Special Laptop optimisation - Custom (large desktops, 1200px and up) */
+@media only screen 
+and (min-width : 1200px) 
+and (max-width : 1440px) {
+	.pad-right-percent-19 {
+		padding-right:7.17%;
+	}
+	.pad-left-percent-19 {
+		padding-left:7.17%;
+	}	
+	.pad-right-percent-18 {
+		padding-right:5.01%;
+	}
+	.pad-left-percent-18 {
+		padding-left:5.01%;
+	}	
+
+	#footer-social-icons {
+		margin-left: 0px!important;
+		padding-left:5%;
+		float:left!important;
+	}
+	#input-postcode-s {
+		bottom:15px;
+	}
+
+}
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 480px) {
+
+
+
+}
+
+
+
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+		
+
+
+
+
+}
+
+
+/* Smal to Medium Desktops and laptops resolutions ----------- */
+@media only screen 
+and (min-width : 1024px)
+and (max-width : 1366px) {
+
+
+
+
+}
+
+
+/* Medium to large Desktops and laptops resolutions ----------- */
+@media only screen 
+and (min-width : 1400px) {
+
+
+
+
+}
+
+
+
